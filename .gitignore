@@ -1,0 +1,30 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+Env/
+
+
+# Django Secret Files
+.env
+
+# Logs
+*.log
+
+# SQLite (in case you use it locally)
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+
+# Python Egg
+*.egg-info/
+
+# Django Migrations (optional, only if you want to ignore them)
+**/migrations/__pycache__/
+**/migrations/*.pyc
