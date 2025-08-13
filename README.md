@@ -1,29 +1,33 @@
-# WellNex – Day 1 ✅
+# WellNex – Day 2 ✅
 
-## 🔧 Backend Setup (Django + DRF)
-- Initialized Django project: `wellnex`
-- Created apps: `users`, `wellnex`
-- Installed `djangorestframework`, `djangorestframework-simplejwt`, etc.
-- Configured custom `User` model with email-based login
-- Enabled JWT authentication
-- Created register and login endpoints
-- Created superuser for admin panel access
+## 🌤️ Mood Tracker API
 
-## 🔐 Auth APIs
+### ✅ Implemented:
+- `Mood` model with mood choices (happy, sad, angry, etc.)
+- Linked mood to authenticated user
+- Created `MoodSerializer`
+- Created protected `MoodViewSet` for:
+  - Create mood check-in
+  - View all user moods
+  - Update/delete mood entries
+- Registered routes using DRF's `DefaultRouter`
 
-| Endpoint               | Method | Description         |
-|------------------------|--------|---------------------|
-| `/api/users/register/`| POST   | User registration   |
-| `/api/token/`         | POST   | JWT login           |
-| `/api/token/refresh/` | POST   | Token refresh       |
+### 🔐 Protected with JWT
+
+| Endpoint            | Method | Description           |
+|---------------------|--------|-----------------------|
+| `/api/moods/`       | GET    | List user moods       |
+| `/api/moods/`       | POST   | Create mood entry     |
+| `/api/moods/<id>/`  | PUT    | Update mood entry     |
+| `/api/moods/<id>/`  | DELETE | Delete mood entry     |
 
 ## 🧪 Tested With:
-- Thunder Client / Postman
-- Access and refresh token workflow
+- Bearer Token Authorization (JWT)
+- CRUD operations from Thunder Client
 
 ---
 
-✅ Next: Implement Mood Tracker API
-
 📁 Commit:  
-`git commit -m "Day 1: Setup Django project with custom user model and JWT auth"`
+`git commit -m "Day 2: Created Mood model, serializer, and CRUD API"`
+
+🚀 Next: Setup React frontend + Bootstrap + Router
