@@ -1,33 +1,20 @@
-# WellNex – Day 2 ✅
+# WellNex – Day 3 ✅
 
-## 🌤️ Mood Tracker API
+## ⚛️ React Frontend Setup
 
 ### ✅ Implemented:
-- `Mood` model with mood choices (happy, sad, angry, etc.)
-- Linked mood to authenticated user
-- Created `MoodSerializer`
-- Created protected `MoodViewSet` for:
-  - Create mood check-in
-  - View all user moods
-  - Update/delete mood entries
-- Registered routes using DRF's `DefaultRouter`
+- Initialized React project: `wellnex-frontend`
+- Installed:
+  - `react-router-dom`
+  - `bootstrap` (for UI components)
+  - `animate.css` (for subtle animations)
+  - `axios` (for API requests)
+- Setup folder structure for scalable component development
+- Added `BrowserRouter` and routing config
+- Created base pages:
+  - Login (`/`)
+  - Register (`/register`)
+  - Dashboard (`/dashboard`)
+  - NotFound (`*`)
 
-### 🔐 Protected with JWT
-
-| Endpoint            | Method | Description           |
-|---------------------|--------|-----------------------|
-| `/api/moods/`       | GET    | List user moods       |
-| `/api/moods/`       | POST   | Create mood entry     |
-| `/api/moods/<id>/`  | PUT    | Update mood entry     |
-| `/api/moods/<id>/`  | DELETE | Delete mood entry     |
-
-## 🧪 Tested With:
-- Bearer Token Authorization (JWT)
-- CRUD operations from Thunder Client
-
----
-
-📁 Commit:  
-`git commit -m "Day 2: Created Mood model, serializer, and CRUD API"`
-
-🚀 Next: Setup React frontend + Bootstrap + Router
+## 📁 Folder Structure
